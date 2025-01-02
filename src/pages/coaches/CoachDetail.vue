@@ -39,7 +39,7 @@ export default{
     },
     computed:{
         contactLink(){
-            return this.$route.path + '/contact';
+            return '/coaches/'+ this.id + '/contact';
         },
         fullName(){
             return this.selectedCoach.firstName + ' ' + this.selectedCoach.lastName;
